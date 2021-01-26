@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Generador de contraseñas</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <main>
+        <div>
+            <h2>Generador de contraseñas aleatorias!</h2>
+
+            <div>
+                <input type="checkbox" id="mayus" checked> Mayúsculas
+                <input type="checkbox" id="minus" checked> Minúsculas
+                <input type="checkbox" id="num" checked> Números
+                <input type="checkbox" id="rar" checked> Caracteres raros
+            </div>
+
+            <br>&nbsp;<br>
+            <p id="contra" onclick="copiar()">Creando...</p>
+            <br>&nbsp;<br>
+
+            <input type="range" min="5" max="50" value="8" id="longitud" onchange="cambiarLongitud()">
+
+            <br>Caracteres: <span id="caracteres">8</span>
+
+            <br>&nbsp;<br>
+            <button onclick="cambiarLongitud()" name="Submit">Generar Nueva Contraseña</button>
+            <br>&nbsp;<br>
+
+            <p>Haz click en la contraseña para coparla.</p>
+        </div>
+    </main>
+    <footer>Web creada por <a href="http://www.linkedin.com/in/angi-rubio">A. Rubio</a></footer>
+</body>
+
+</html>
